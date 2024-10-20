@@ -1,0 +1,7 @@
+{
+    "services": {
+        "samuel": {
+            "url": "http://samuel-service:80/samuel"
+        }
+    }
+}
