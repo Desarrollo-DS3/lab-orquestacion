@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: samuel-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: samuel
+  template:
+    metadata:
+      labels:
+        app: samuel
+    spec:
+      containers:
+      - name: samuel
+        image: sakyojestar/samuel:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: samuel-service
+spec:
+  selector:
+    app: samuel
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
