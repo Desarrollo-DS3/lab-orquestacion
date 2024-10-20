@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: samuel
-        image: sakyojestar/samuel:latest
+        image: sakyjoestar/samuel:latest
         ports:
         - containerPort: 80
 ---
