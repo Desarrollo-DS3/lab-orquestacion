@@ -2,6 +2,9 @@
     "services": {
         "samuel": {
             "url": "http://samuel-service:80/samuel"
+        },
+        "juan": {
+            "url": "http://juan-service:80/juan"
         }
     }
 }
