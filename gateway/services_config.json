@@ -12,5 +12,8 @@
         "duque": {
             "url": "http://duque-service:80/duque"
         }
+        "julian": {
+            "url": "http://julian-service:80/julian"
+        }
     }
 }
