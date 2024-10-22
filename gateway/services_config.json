@@ -8,6 +8,9 @@
         },
         "john": {
             "url": "http://john-service:80/john"
+        },
+        "duque": {
+            "url": "http://duque-service:80/duque"
         }
     }
 }
