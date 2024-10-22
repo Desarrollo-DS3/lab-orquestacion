@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: duque
-          image: sduquec/duque-service:latest
+          image: sduquec/duque-deployment:latest
           ports:
             - containerPort: 80
 ---
