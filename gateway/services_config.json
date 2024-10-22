@@ -5,6 +5,9 @@
         },
         "juan": {
             "url": "http://juan-service:80/juan"
+        },
+        "john": {
+            "url": "http://john-service:80/john"
         }
     }
 }

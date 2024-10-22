@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: john-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: john
+  template:
+    metadata:
+      labels:
+        app: john
+    spec:
+      containers:
+      - name: john
+        image: johnfreddy/john:latest
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: john-service
+spec:
+  selector:
+    app: john
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: ClusterIP
