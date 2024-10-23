@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: sebastian
-          image: sebastianmr18/sebastian-service:latest
+          image: herreran/sebastian-service:latest
           ports:
             - containerPort: 80
 ---
