@@ -12,6 +12,11 @@ spec:
       labels:
         app: gateway
     spec:
+      tolerations:
+      - key: "gateway"
+        operator: "Equal"
+        value: "true"
+        effect: "NoSchedule"
       containers:
       - name: gateway
         image: herreran/gateway:latest
